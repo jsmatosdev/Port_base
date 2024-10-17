@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@38,74.2&display=swap');
+
+
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: rgb(0, 1, 35) !important;
+}
+
+nav,
+.sansita-bold-italic {
+    font-size: 18px;
+
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+nav a:hover {
+    color: rgb(0, 149, 149);
+}
+
+.nav-options {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    list-style: none;
+    padding: 16px;
+}
+
+.nav-titulo {
+    color: white;
+    text-decoration: none;
+}
+
+.imagem-cabecalho {
+    width: 240px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 50%;
+    border: rgba(133, 177, 177, 0.808) solid 3px;
+
+    -webkit-box-shadow: -7px 20px 133px -7px rgba(3, 3, 94, 1);
+    -moz-box-shadow: -7px 20px 133px -7px rgba(3, 3, 94, 1);
+    box-shadow: -7px 20px 133px -7px rgb(58, 58, 151);
+}
+
+.titulo-cabecalho {
+    color: rgba(43, 184, 184, 0.808);
+    font-style: oblique;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.titulo-cabecalho,
+.subtitulo-cabecalho {
+    text-align: center;
+}
+
+main,
+header {
+    margin: 10px;
+}
+
+
+h1,
+h2 {
+    color: rgba(137, 243, 243, 0.808);
+}
+
+
+/* Main */
+.titulo-main,
+.honk {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 38,
+        "SHLN" 74.2;
+
+    font-size: 40px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap!important;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction:column ;
+}
+
+.p-main-sac{
+    flex-wrap: wrap-reverse!important;
+}
+
+.img-sobre-mim{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+/* footer */
+.social {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+.img-social {
+    width: 55px;
+    height: 55px;
+}
+
+.rodape-custom {
+    background-color: rgb(0, 1, 35);
+    height: 220px;
+}
+
+footer,
+ul {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.legenda {
+    color: #fff;
+}
