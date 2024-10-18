@@ -24,12 +24,13 @@
     <nav class="navbar ">
         <div class="container-fluid">
             <a class="navbar-brand" href="../../index.html">
-                Home Return
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-arrow-return-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5" />
-                </svg>
+                <p class="button-nav-contato">Back Home
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-arrow-return-left nav-icone" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5" />
+                    </svg>
+                </p>
             </a>
         </div>
     </nav>
@@ -37,29 +38,31 @@
     <div id="contato-page">
         <div class="container text-center">
             <div class="row">
-                <div class="col">
+                <div class="col center-form">
                     <header>
-                        <h1> <b>Entre em Contato comigo</b></h1>
+                        <h1 class="titulo-form"> <b>Entre em Contato comigo</b></h1>
                     </header>
                     <form onsubmit="enviarFormulario(event)" autocomplete="off" class="form-centro">
                         <fieldset class="fieldset-form">
-                            <legend>Preencha os Campos</legend>
-                    
+                            <legend class="legenda-form">Preencha os Campos</legend>
+
                             <!-- Campo Nome Completo -->
                             <div class="mb-3">
-                                <input type="text" name="name" placeholder="Nome Completo" id="nome-us" class="form-control">
+                                <input type="text" name="name" placeholder="Nome Completo" id="nome-us"
+                                    class="form-control">
                             </div>
-                    
+
                             <!-- Campo Email -->
                             <div class="mb-3">
                                 <input type="email" name="email" placeholder="Email" id="email-us" class="form-control">
                             </div>
-                    
+
                             <!-- Campo Mensagem -->
                             <div class="mb-3">
-                                <textarea name="mensagem" placeholder="Mensagem" id="mensagem-us" class="form-control"></textarea>
+                                <textarea name="mensagem" placeholder="Mensagem" id="mensagem-us"
+                                    class="form-control"></textarea>
                             </div>
-                    
+
                             <!-- Botão de Enviar -->
                             <div class="mb-3">
                                 <button type="submit" class="btn btn-primary btn-sub">Enviar</button>
