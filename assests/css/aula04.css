@@ -3,10 +3,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Honk:MORF,SHLN@38,74.2&display=swap');
 
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #fff;
     background-color: rgb(0, 1, 35) !important;
@@ -14,7 +16,8 @@ body {
 
 nav,
 .sansita-bold-italic {
-    font-size: 18px;
+    font-size: 20px;
+    padding: 15px;
 
     font-family: "Sansita", sans-serif;
     font-weight: 700;
@@ -39,12 +42,99 @@ nav a:hover {
     text-decoration: none;
 }
 
+/* Ajustes para o menu responsivo (mobile) */
+@media (max-width: 991px) {
+
+    /* Esconde os links de navegação em telas menores */
+    .nav-options {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* Exibe o ícone de 3 barras */
+    .nav-home::before {
+        content: '\2630';
+        /* Código Unicode para o ícone de 3 barras */
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Quando clicar no ícone, o menu será mostrado */
+    .nav-home.active .nav-options {
+        display: flex;
+    }
+}
+
+/* Exibe o menu normalmente em telas maiores que 992px */
+@media (min-width: 992px) {
+    .nav-options {
+        display: flex;
+        /* Exibe o menu normalmente */
+    }
+
+    .nav-home::before {
+        display: none;
+        /* Esconde o ícone de 3 barras em telas grandes */
+    }
+}
+
+@media (max-width: 414px ) {
+    .imagem-cabecalho {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .titulo-cabecalho,
+    .subtitulo-cabecalho{
+        font-size: 25px;
+    }
+}
+
+
+
+.principal-header {
+    width: auto;
+    height: 92.2vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal-header {
+    text-align: center;
+    animation: moveY 4s infinite ease-in-out;
+}
+
+/* Definindo a animação de movimento no eixo Y */
+@keyframes moveY {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+        /* Move para cima */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Volta à posição original */
+    }
+}
+
 .imagem-cabecalho {
-    width: 240px;
-    height: 250px;
-    margin: 10px;
+    width: 350px;
+    height: 350px;
+
     border-radius: 50%;
     border: rgba(133, 177, 177, 0.808) solid 3px;
+
 
     -webkit-box-shadow: -7px 20px 133px -7px rgba(3, 3, 94, 1);
     -moz-box-shadow: -7px 20px 133px -7px rgba(3, 3, 94, 1);
@@ -68,11 +158,6 @@ nav a:hover {
     text-align: center;
 }
 
-main,
-header {
-    margin: 10px;
-}
-
 
 h1,
 h2 {
@@ -94,32 +179,46 @@ h2 {
     font-size: 40px;
 }
 
-.conteudo-principal{
+.conteudo-principal {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap!important;
-}
-
-.conteudo-principal-escrito{
-    display: flex;
-    flex-direction:column ;
-}
-
-.p-main-sac{
-    flex-wrap: wrap-reverse!important;
-}
-
-.img-sobre-mim{
-    width: 200px;
-    height: 200px;
+    flex-wrap: wrap !important;
 }
 
 
 
+#sobre-mim {
+    background-color: rgb(22, 90, 100);
+    width: auto;
+    height: 80vh;
+}
 
+#idAcad {
+    background-color: rgb(28, 81, 94);
+    width: auto;
+    height: 80vh;
+}
 
+#idCursos {
+    background-color: rgb(24, 92, 105);
+    width: auto;
+    height: 80vh;
+}
+
+@media (max-width: 728px){
+    .p-main-sac{
+        align-items: center;
+        margin: 5px;
+    }
+    .titulo-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+} 
 
 /* footer */
 .social {

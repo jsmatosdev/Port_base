@@ -66,24 +66,15 @@ legend {
     border: none;
 }
 
-.table-custom {
-    width: 520px !important;
-    height: 324px;
-
-    margin: 20px auto;
-    display: table;
-}
-
-table td svg {
-    margin: 5px;
-}
-
-table td,
-table th {
-    text-align: center;
-    /* Centraliza o conteúdo horizontalmente */
-    vertical-align: middle;
-    /* Centraliza o conteúdo verticalmente */
+@media (max-width: 511px) {
+    .form-centro{
+        max-width: 400px;
+        max-height: 300px;
+    }
+    .fieldset-form{
+        max-width: 380px;
+        max-height: 300px;
+    }
 }
 
 
